@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="López" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="contenedor-carga">
+      <div class="barra-carga">
+        <div class="barra-progreso"></div>
+      </div>
+    </div>
+    <div class="contenido">
+      <header>
+        <nav>
+          <ul>
+            <li class="logoli">
+              <img
+                class="logo"
+                src="https://avatars.githubusercontent.com/u/50198218?v=4"
+                alt="Logo"
+              />
+            </li>
+            <a href="#sobre-mi"><li>Sobre mí</li></a>
+            <a href="#mi-recorrido"><li>Mi recorrido</li></a>
+            <a href="#trabajos"><li>Trabajos</li></a>
+            <a href="#contacto"><li>Contacto</li></a>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <section>
+          <h1>Sobre mí</h1>
+          <article class="sobre-mi" id="sobre-mi">
+            <h2>¿Quién soy?</h2>
+            <p>
+              José Manuel López Valero, 22 años, estudiante de Desarrollo de
+              Aplicaciones Web y Multiplataforma. Me encanta el mundo de la
+              informática y la tecnología, y me gustaría dedicarme a ello en un
+              futuro, y llegado el momento ejercer de profesor de informática en
+              un instituto.
+            </p>
+            <h2>¿A qué me dedico?</h2>
+            <p>
+              Actualmente estoy estudiando el ciclo de Desarrollo de
+              Aplicaciones Web en el IES Gran Capitán, y en mi tiempo libre me
+              dedico a aprender más sobre el mundo de la programación y la
+              informática en general. En este portfolio podrás encontrar más
+              información sobre mí, y sobre mis trabajos.
+            </p>
+            <h2>Intereses</h2>
+            <p>
+              Como he dicho anteriormente, me encanta el mundo de la informática
+              y la tecnología, me encanta aprender cosas nuevas sobre ello,
+              suelo estar al día de las novedades que van saliendo, y me gusta
+              probarlas. También me gusta la música, y los videojuegos.
+            </p>
+          </article>
+          <h1>Mi recorrido</h1>
+          <article class="timeline" id="mi-recorrido">
+            <ul>
+              <li>
+                <h2>2022 - 2023</h2>
+                <p>
+                  Técnico Superior en Desarrollo Aplicaciones Web
+                  <br />
+                  IES Gran Capitán
+                </p>
+              </li>
+              <li>
+                <h2>2021 - 2022</h2>
+                <p>
+                  Técnico Superior en Desarrollo Aplicaciones Multiplataforma
+                  <br />
+                  Salesianos
+                </p>
+              </li>
+              <li>
+                <h2>2019 - 2021</h2>
+                <p>
+                  Técnico Superior en Animaciones 3D, Juegos y Entornos
+                  Interactivos
+                  <br />
+                  Tartesos
+                </p>
+              </li>
+              <li>
+                <h2>2017 - 2019</h2>
+                <p>
+                  Técnico en Sistemas Microinformáticos y Redes
+                  <br />
+                  IES Fidiana
+                </p>
+              </li>
+              <li>
+                <h2>2013 - 2017</h2>
+                <p>
+                  Educación Secundaria Obligatoria
+                  <br />
+                  IES Fidiana
+                </p>
+              </li>
+            </ul>
+          </article>
+          <h1>Trabajos</h1>
+          <article class="trabajos" id="trabajos">
+            <div class="trabajo">
+              <a href="https://imgur.com/iOOBIw9"
+                ><img
+                  src="https://i.imgur.com/iOOBIw9.jpg"
+                  title="source: imgur.com"
+                  width="40%"
+                  height="40%"
+              /></a>
+              <h3>Trabajo Fin de Grado Animacion 3D</h3>
+              <p>Trabajo final Color e iluminación y acabados 2D y 3D</p>
+            </div>
+            <div class="trabajo">
+              <a href="https://imgur.com/2sLzjRm"
+                ><img
+                  src="https://i.imgur.com/2sLzjRm.jpg"
+                  title="source: imgur.com"
+                  width="40%"
+                  height="40%"
+              /></a>
+              <h3>Trabajo 3D</h3>
+              <p>
+                Trabajo realizado en el módulo de Animación 3D, Juegos y
+                Entornos Interactivos
+              </p>
+            </div>
+            <div class="trabajo">
+              <a href="https://imgur.com/Kd4KOWL"
+                ><img
+                  src="https://i.imgur.com/Kd4KOWL.png?1"
+                  title="source: imgur.com"
+                  width="40%"
+                  height="40%"
+              /></a>
+              <h3>Trabajo 3</h3>
+              <p>
+                Web realizada para el uso de un listado de directorios de
+                archivos y servidor local personal
+              </p>
+            </div>
+          </article>
+        </section>
+
+        <section class="contacto" id="contacto">
+          <h1>Contacto</h1>
+          <form>
+            <div>
+              <input type="text" name="nombre" placeholder="Nombre" />
+              <input type="email" name="correo" placeholder="Correo" />
+            </div>
+            <div>
+              <input type="text" name="asunto" placeholder="Asunto" />
+              <textarea
+                name="mensaje"
+                placeholder="Escribe aquí tu mensaje"
+              ></textarea>
+            </div>
+            <button>Enviar</button>
+          </form>
+        </section>
+      </main>
+
+      <footer>
+        <p>© 2023 - Todos los derechos reservados</p>
+        <a href="mailto:lovajomafidiana@gmail.com">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gmail_icon_%282020%29.svg/1024px-Gmail_icon_%282020%29.svg.png"
+            alt="Correo"
+            width="25"
+            height="25"
+          />
+        </a>
+        <a href="https://github.com/JoseManuelLopezValer0">
+          <img
+            src="https://icon-library.com/images/github-icon-white/github-icon-white-6.jpg"
+            alt="Instagram"
+            width="25"
+            height="25"
+          />
+        </a>
+        <a href="https://www.instagram.com/jmlg_a3d/">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Instagram-Icon.png/1025px-Instagram-Icon.png"
+            alt="Instagram"
+            width="25"
+            height="25"
+          />
+        </a>
+        <a href="https://twitter.com/L0p3zVal3r012">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Logo_of_Twitter.svg/512px-Logo_of_Twitter.svg.png"
+            alt="Twitter"
+            width="25"
+            height="25"
+          />
+        </a>
+      </footer>
+    </div>
+  </body>
+</html>

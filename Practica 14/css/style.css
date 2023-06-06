@@ -1,0 +1,252 @@
+/* responsive */
+
+@media screen and  (max-width: 820px) { 
+  
+  .logo {
+    display: none;
+  }
+
+  .logoli {
+    display: none;
+  }
+
+  nav ul {
+    display: grid;  
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    list-style: none;
+    padding: 0;
+    align-items: center;
+    text-align: center;
+  }
+
+  nav ul a li {
+    border: 1px solid #000000; 
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #000000;
+  }
+
+
+  .contacto {
+    width: 100%;
+    padding: 0px;
+  }
+}
+
+@media screen and (min-width: 820px) {
+  nav ul {
+    display: flex;  
+    list-style: none;
+    padding: 0;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contacto {
+    width: 50%;
+    padding: 10px;
+  }
+}
+  
+/*  Animacion de carga  */
+
+.barra-carga {
+  width: 50%;
+  height: 10px;
+  background-color: #585858;
+  border-radius: 50px;
+}
+
+.barra-progreso {
+  width: 0%;
+  height: 100%;
+  background-color: #ffffff;
+  transition: width 0.5s ease-in-out;
+  border-radius: 50px;
+}
+
+.contenedor-carga {
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.contenido {
+  display: none;
+}
+
+@keyframes llenar {
+  0% {
+    width: 0%;
+  }
+  40% {
+    width: 35%;
+  }
+  50% {
+    width: 40%;
+  }
+  60% {
+    width: 45%;
+  }
+  70% {
+    width: 55%;
+  }
+  75% {
+    width: 60%;
+  }
+  85% {
+    width: 65%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.barra-progreso.llena {
+  animation: llenar 1.4s ease-in-out forwards;
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.contenido.aparecer {
+  animation: aparecer 1s ease-in-out forwards;
+} 
+
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+article {
+  padding: 10px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  background-color: #333;
+  color: #fff;
+}
+
+/* Estilos del encabezado */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+
+nav ul a li {
+  margin-left: 10px;
+}
+
+nav ul a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Estilos del contenido principal */
+main {
+  padding: 20px;
+}
+
+h1 {
+  color: #333;
+}
+
+.timeline ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+}
+
+
+/* Estilos de el logo */
+.logo{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #fff;
+  margin: 0 auto;
+  overflow: hidden;
+}
+/* Estilos del pie de página */
+footer {
+  display: flex;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer a {
+  margin-left: 10px;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Estilo formulario */
+form {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+form input, button {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+form input:focus {
+  outline: none;
+  border-color: #585858;
+}
+
+.contacto {
+  margin: 0 auto;
+  margin-bottom: 20px;
+  border:1px solid #333;
+  border-radius: 5px;
+  background-color: #333;
+  color: #fff;
+    text-align: center;
+
+}
+.contacto h1{
+  color: #fff;
+}
+
+.contacto div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.contacto div input , textarea{
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
