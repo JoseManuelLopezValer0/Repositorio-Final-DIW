@@ -75,8 +75,8 @@
           </nav>
         </header>
         <section>
-          <h1>Sobre mí</h1>
-          <article class="sobre-mi" id="sobre-mi">
+          <h1 id="sobre-mi">Sobre mí</h1>
+          <article class="sobre-mi">
             <h2>¿Quién soy?</h2>
             <p>
               José Manuel López Valero, 22 años, estudiante de Desarrollo de
@@ -101,8 +101,8 @@
               probarlas. También me gusta la música, y los videojuegos.
             </p>
           </article>
-          <h1>Mi recorrido</h1>
-          <article class="timeline" id="mi-recorrido">
+          <h1 id="mi-recorrido">Mi recorrido</h1>
+          <article class="timeline">
             <ul>
               <li>
                 <h2>2022 - 2023</h2>
@@ -157,39 +157,94 @@
               </li>
             </ul>
           </article>
-          <h1>Trabajos</h1>
-          <article class="trabajos" id="trabajos">
-            <div class="trabajo">
-              <img
-                src="https://i.imgur.com/iOOBIw9.jpg"
-                title="source: imgur.com"
+          <h1 id="trabajos">Trabajos</h1>
+          <div class="slide trabajos">
+            <div class="slide-inner">
+              <input
+                class="slide-open"
+                type="radio"
+                id="slide-1"
+                name="slide"
+                aria-hidden="true"
+                hidden=""
+                checked="checked"
               />
-              <h3>Trabajo Fin de Grado Animacion 3D</h3>
-              <p>Trabajo final Color e iluminación y acabados 2D y 3D</p>
-            </div>
-            <div class="trabajo">
-              <img
-                src="https://i.imgur.com/2sLzjRm.jpg"
-                title="source: imgur.com"
+              <div class="slide-item trabajo">
+                <img src="https://i.imgur.com/iOOBIw9.jpg" />
+                <label class="slide-text">
+                  <h3 id="titulo">Trabajo Fin de Grado Animacion 3D</h3>
+                  <p id="descripcion">
+                    Trabajo final Color e iluminación y acabados 2D y 3D
+                  </p>
+                </label>
+              </div>
+              <input
+                class="slide-open"
+                type="radio"
+                id="slide-2"
+                name="slide"
+                aria-hidden="true"
+                hidden=""
               />
-              <h3>Trabajo 3D</h3>
-              <p>
-                Trabajo realizado en el módulo de Animación 3D, Juegos y
-                Entornos Interactivos
-              </p>
-            </div>
-            <div class="trabajo">
-              <img
-                src="https://i.imgur.com/Kd4KOWL.png?1"
-                title="source: imgur.com"
+              <div class="slide-item trabajo">
+                <img src="https://i.imgur.com/2sLzjRm.jpg" />
+                <label class="slide-text">
+                  <h3 id="titulo">Trabajo 3D</h3>
+                  <p id="descripcion">
+                    Trabajo realizado en el módulo de Animación 3D, Juegos y
+                    Entornos Interactivos
+                  </p>
+                </label>
+              </div>
+              <input
+                class="slide-open"
+                type="radio"
+                id="slide-3"
+                name="slide"
+                aria-hidden="true"
+                hidden=""
               />
-              <h3>Trabajo 3</h3>
-              <p>
-                Web realizada para el uso de un listado de directorios de
-                archivos y servidor local personal
-              </p>
+              <div class="slide-item trabajo">
+                <img src="https://i.imgur.com/Kd4KOWL.png?1" />
+                <label class="slide-text">
+                  <h3 id="titulo">Trabajo 3</h3>
+                  <p id="descripcion">
+                    Web realizada para el uso de un listado de directorios de
+                    archivos y servidor local personal
+                  </p>
+                </label>
+              </div>
+              <label for="slide-3" class="slide-control prev control-1"
+                >‹</label
+              >
+              <label for="slide-2" class="slide-control next control-1"
+                >›</label
+              >
+              <label for="slide-1" class="slide-control prev control-2"
+                >‹</label
+              >
+              <label for="slide-3" class="slide-control next control-2"
+                >›</label
+              >
+              <label for="slide-2" class="slide-control prev control-3"
+                >‹</label
+              >
+              <label for="slide-1" class="slide-control next control-3"
+                >›</label
+              >
+              <ol class="slide-indicador">
+                <li>
+                  <label for="slide-1" class="slide-circulo">•</label>
+                </li>
+                <li>
+                  <label for="slide-2" class="slide-circulo">•</label>
+                </li>
+                <li>
+                  <label for="slide-3" class="slide-circulo">•</label>
+                </li>
+              </ol>
             </div>
-          </article>
+          </div>
         </section>
 
         <section class="contacto" id="contacto">

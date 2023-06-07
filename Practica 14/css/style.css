@@ -129,12 +129,153 @@
     align-items: center;
     padding: 10px;
     text-align: center;
+    background-color: #333;
+    border-radius: 5px;
   }
 
   .trabajo img {
     width: 60%;
     height: 60%;
     border-radius: 5px;
+  }
+
+  .slide {
+    position: relative;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
+    margin-top: 26px;
+  }
+
+  .slide-inner {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+  }
+
+  .slide-open:checked + .slide-item {
+    position: static;
+    opacity: 100;
+  }
+
+  .slide-item {
+    position: absolute;
+    display: grid;
+    width: 100%;
+    height: 100%;
+    justify-items: center;
+    opacity: 0;
+    -webkit-transition: opacity 0.6s ease-out;
+    transition: opacity 0.6s ease-out;
+  }
+
+  .slide-item img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+  }
+
+  .slide-control {
+    background: rgba(0, 0, 0, 0.28);
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    font-size: 40px;
+    height: 40px;
+    line-height: 35px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    cursor: pointer;
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    text-align: center;
+    width: 40px;
+    z-index: 10;
+  }
+
+  .slide-control.prev {
+    left: 2%;
+  }
+
+  .slide-control.next {
+    right: 2%;
+  }
+
+  .slide-control:hover {
+    background: rgba(0, 0, 0, 0.8);
+    color: #aaaaaa;
+  }
+
+  #slide-1:checked ~ .control-1,
+  #slide-2:checked ~ .control-2,
+  #slide-3:checked ~ .control-3 {
+    display: block;
+  }
+
+  .slide-indicador {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  .slide-indicador li {
+    display: inline-block;
+    margin: 0 5px;
+  }
+
+  .slide-circulo {
+    color: #828282;
+    cursor: pointer;
+    display: block;
+    font-size: 35px;
+  }
+
+  .slide-circulo:hover {
+    color: #aaaaaa;
+  }
+
+  #slide-1:checked
+    ~ .control-1
+    ~ .slide-indicador
+    li:nth-child(1)
+    .slide-circulo,
+  #slide-2:checked
+    ~ .control-2
+    ~ .slide-indicador
+    li:nth-child(2)
+    .slide-circulo,
+  #slide-3:checked
+    ~ .control-3
+    ~ .slide-indicador
+    li:nth-child(3)
+    .slide-circulo {
+    color: #428bca;
+  }
+
+  #titulo {
+    width: 100%;
+    padding: 0px;
+    margin: 0px auto;
+    text-align: center;
+    font-size: 27px;
+    color: rgba(255, 255, 255, 1);
+    font-family: "Open Sans", sans-serif;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33),
+      -1px 0px 2px rgba(255, 255, 255, 0);
+  }
+
+  #descripcion {
+    width: 100%;
+    padding: 0px;
+    margin: 0px auto;
+    text-align: center;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 1);
+    font-family: "Open Sans", sans-serif;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33),
+      -1px 0px 2px rgba(255, 255, 255, 0);
   }
 
   .contacto {
@@ -295,7 +436,6 @@
   padding: 0;
 }
 
-
 #container {
   position: absolute;
   margin: auto;
@@ -333,6 +473,7 @@ article {
   margin-bottom: 20px;
   background-color: #333;
   color: #fff;
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
 }
 
 /* Estilos del encabezado */
@@ -407,6 +548,33 @@ form input:focus {
   border-color: #585858;
 }
 
+form textarea:focus {
+  outline: none;
+  border-color: #585858;
+}
+
+form button {
+  color: #333;
+  cursor: pointer;
+}
+
+form button:hover {
+  outline: none;
+  border-color: #585858;
+  background-color: #585858;
+  color: #fff;
+  transition: 0.5s;
+}
+
+form textarea {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
 .contacto {
   margin: 0 auto;
   margin-bottom: 20px;
@@ -415,6 +583,7 @@ form input:focus {
   background-color: #333;
   color: #fff;
   text-align: center;
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
 }
 .contacto h1 {
   color: #fff;
