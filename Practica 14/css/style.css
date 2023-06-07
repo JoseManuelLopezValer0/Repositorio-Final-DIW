@@ -190,7 +190,7 @@
 }
 
 .barra-progreso.llena {
-  animation: llenar 1.4s ease-in-out forwards;
+  animation: llenar 1s ease-in-out forwards;
 }
 
 @keyframes aparecer {
@@ -203,7 +203,20 @@
 }
 
 .contenido.aparecer {
-  animation: aparecer 1s ease-in-out forwards;
+  animation: aparecer 1.4s ease-in-out forwards;
+}
+
+.contenedor-carga.desaparecer {
+  animation: desaparecer 1s ease-in-out forwards;
+}
+
+@keyframes desaparecer {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 /* Estilos de la portada */
@@ -215,7 +228,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-image: url("https://i.gifer.com/J4x.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
+
 
 .texto-portada {
   display: flex;
@@ -264,7 +282,7 @@
 
 .texto-portada h1 {
   color: #fff;
-  font-size: 50px;
+  font-size: 40px;
   margin: 0;
   padding: 0;
 }
@@ -279,6 +297,7 @@
   top: 0;
   bottom: 0;
   filter: url(#threshold) blur(0.6px);
+  color : #fff;
 }
 
 #text1,
@@ -346,6 +365,13 @@ h1 {
   color: #fff;
   box-shadow: 0 0 10px #000;
   text-align: center;
+}
+
+/* sobre-mi */
+
+.sobre-mi:focus {
+  background-color: #333;
+  color: #fff;
 }
 
 /* Estilos de el logo */
