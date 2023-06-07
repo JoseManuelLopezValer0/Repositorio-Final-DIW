@@ -95,8 +95,6 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     padding: 10px;
-    margin: 0;
-    list-style: none;
   }
 
   .line {
@@ -104,13 +102,13 @@
   }
 
   .timeline ul li {
-    width: 30%;
+    width: auto;
     margin: 10px;
   }
 
   .timeline ul li:hover {
     transform: scale(1.1);
-    transition: 0.5s;
+    transition: 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
   }
 
   .timeline ul li:hover > .line {
