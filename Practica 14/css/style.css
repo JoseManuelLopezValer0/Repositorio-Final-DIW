@@ -24,6 +24,11 @@
     background-color: #000000;
   }
 
+  #text1,
+  #text2 {
+    font-size: 25pt;
+  }
+
   .timeline ul {
     padding: 10px;
     margin: 0;
@@ -78,6 +83,11 @@
   nav ul a:hover {
     transform: scale(1.1);
     transition: 0.5s;
+  }
+
+  #text1,
+  #text2 {
+    font-size: 30pt;
   }
   .timeline ul {
     display: flex;
@@ -228,12 +238,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url("https://i.gifer.com/J4x.gif");
+  background-image: url("https://www.altium.com/documentation/sites/default/files/wiki_attachments/296865/Design1a.jpg");
   background-size: cover;
-  background-repeat: no-repeat;
   background-position: center;
 }
-
 
 .texto-portada {
   display: flex;
@@ -287,7 +295,6 @@
   padding: 0;
 }
 
-@import url("https://fonts.googleapis.com/css?family=Raleway:900&display=swap");
 
 #container {
   position: absolute;
@@ -296,8 +303,7 @@
   height: 80pt;
   top: 0;
   bottom: 0;
-  filter: url(#threshold) blur(0.6px);
-  color : #fff;
+  color: #fff;
 }
 
 #text1,
@@ -305,12 +311,7 @@
   position: absolute;
   width: 100%;
   display: inline-block;
-
   font-family: "Raleway", sans-serif;
-  font-size: 30pt;
-
-  text-align: center;
-
   user-select: none;
 }
 
